@@ -1,4 +1,4 @@
-package com.ajzawawi.flink.amps
+package com.ajzawawi.flink.amps.source
 
 /**
  * A custom Flink Source implementation that reads messages from an AMPS topic.

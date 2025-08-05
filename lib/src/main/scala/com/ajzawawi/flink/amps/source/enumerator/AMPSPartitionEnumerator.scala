@@ -1,4 +1,4 @@
-package com.ajzawawi.flink.amps
+package com.ajzawawi.flink.amps.source.enumerator
 
 /**
  * The brain. Responsible for assigning splits to Flink source readers.

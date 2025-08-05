@@ -1,4 +1,4 @@
-package com.ajzawawi.flink.amps
+package com.ajzawawi.flink.amps.source.split
 
 /**
  * Handles serialization and deserialization of AMPSPartitionSplit instances

@@ -1,4 +1,6 @@
-package com.ajzawawi.flink.amps
+package com.ajzawawi.flink.amps.source.split
+
+import org.apache.flink.api.connector.source.SourceSplit
 
 /**
  * Represents a unit of work (split) in the AMPS source connector.
