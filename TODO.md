@@ -42,6 +42,35 @@ The librarian never responds with "NoMoreSplits!"
 
 The readers never leave or keep coming around. So the reading never ends
 
+## How Would This Work for Amps...
+
+    Source Config
+        Topic or Topic Regex
+            - Specify one or more amps topics
+            - Wildcard topics? filtered subs
+        Deserializer
+            AMPS messages parsed into usage records (nvfix, avro, json, etc)
+
+    Split
+        A single subscription (SOW? bookmark replay)
+
+    SplitEnumerator
+        Connect to AMPS Server
+            - List all available topics matching the provided pattern or topic list
+            - Balance or redistributin of splits
+
+    SourceReader
+        Subscribe to assigned split
+            subscribe, sow_and_subscribe, bookmark
+        Receive the messages continously / deserialize
+
+### Things to think about
+    Backpressure
+    Parallelism
+    Rebalancing
+    Recovery on restart - bookmark
+    Dynamic discovery** think about later
+
 # Preliminary Structure
 
 Will refactor after tests
