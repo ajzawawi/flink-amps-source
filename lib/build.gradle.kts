@@ -22,6 +22,12 @@ dependencies {
     // Use Scala 2.13 in our library project
     implementation(libs.scala.library)
     implementation(libs.logback.classic)
+    implementation(libs.flink.core)
+    implementation(libs.flink.java)
+    implementation(libs.flink.streaming.java)
+    implementation(libs.flink.connector.base)
+    implementation(libs.flink.runtime)
+    testImplementation(libs.flink.test.utils)
 
     // Use Scalatest for testing our library
     testImplementation(libs.scalatest.v2.v13)
