@@ -1,6 +1,7 @@
 package com.ajzawawi.flink.amps.source.split
 
 import org.apache.flink.api.connector.source.SourceSplit
+import com.github.f4b6a3.ulid.UlidCreator
 
 /**
  * Represents a unit of work (split) in the AMPS source connector.
@@ -10,4 +11,8 @@ import org.apache.flink.api.connector.source.SourceSplit
  *
  * @param splitId A unique identifier for this split.
  */
-case class AMPSPartitionSplit(splitId: String) extends SourceSplit
+case class AMPSPartitionSplit(
+                               topic: String,
+                               splitId: String,
+                               filter: Option[String] = None,
+                             ) extends SourceSplit

@@ -27,6 +27,9 @@ dependencies {
     implementation(libs.flink.streaming.java)
     implementation(libs.flink.connector.base)
     implementation(libs.flink.runtime)
+
+    implementation(libs.ulid.creator)
+
     testImplementation(libs.flink.test.utils)
 
     // Use Scalatest for testing our library
