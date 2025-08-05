@@ -64,6 +64,12 @@ The readers never leave or keep coming around. So the reading never ends
             subscribe, sow_and_subscribe, bookmark
         Receive the messages continously / deserialize
 
+**Bounded**
+    Start from a bookmark id 
+    End when:
+        - You reach a known target end offset
+        - A limited number of messages
+
 ### Things to think about
     Backpressure
     Parallelism
