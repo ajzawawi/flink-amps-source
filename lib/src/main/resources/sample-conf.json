@@ -1,0 +1,18 @@
+{
+  "reportId": "rpt123",
+  "configNamespace": "private/config/reporting",
+  "defaultActivityPolicy": {
+    "timeoutSeconds": 10
+  },
+  "activityPolicies": {
+    "report": {
+      "timeoutSeconds": 20,
+      "retryPolicy": {
+        "initialIntervalSeconds": 5,
+        "maxIntervalSeconds": 60,
+        "maxAttempts": 4,
+        "backoffCoefficient": 2.0
+      }
+    }
+  }
+}
